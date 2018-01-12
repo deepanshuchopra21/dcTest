@@ -13,7 +13,7 @@ Resources:
             Handler: index.handler
             Runtime: python2.7
             CodeUri: ./
-            AutoPublishAlias: live
+            AutoPublishAlias: stage
 
             Environment:
                 Variables:
