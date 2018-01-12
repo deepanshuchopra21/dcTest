@@ -13,6 +13,8 @@ Resources:
             Handler: index.handler
             Runtime: python2.7
             CodeUri: ./
+            AutoPublishAlias: live
+
             Environment:
                 Variables:
                     SAM_MULTIPLIER: !Ref SamMultipler
@@ -21,6 +23,5 @@ Resources:
               GetResource:
                 Type: Api
                 Properties:
-                  StageName: qa
                   Path: /sam
                   Method: get
